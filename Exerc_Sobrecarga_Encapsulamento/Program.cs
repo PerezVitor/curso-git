@@ -33,13 +33,18 @@ namespace Exerc_Sobrecarga_Encapsulamento
             Console.WriteLine(novaConta);
 
             Console.Write("\nEntre um valor para depósito: ");
-            double deposito = double.Parse(Console.ReadLine());
-            novaConta.Deposito(deposito);
+            double valor = double.Parse(Console.ReadLine());
+            novaConta.Deposito(valor);
             Console.WriteLine(novaConta);
 
             Console.Write("\nEntre um valor para saque: ");
-            double saque = double.Parse(Console.ReadLine());
-            novaConta.Saque(saque);
+            valor = double.Parse(Console.ReadLine());
+            novaConta.Saque(valor);
+            Console.WriteLine(novaConta);
+
+            Console.WriteLine("Entre com novo valor de depósito: ");
+            valor = double.Parse(Console.ReadLine());
+            novaConta.Deposito(valor);
             Console.WriteLine(novaConta);
 
             Console.ReadLine();
